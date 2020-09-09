@@ -1,0 +1,121 @@
+<form>
+    <div class="screen-number-wrap">
+        <input type="text" class="screen-number-input w-input" maxlength="10" value="1" name="ScreenNumber" data-name="ScreenNumber" placeholder="1" id="Screen-Number" oninput="slider.value=ScreenNumber.value" required="">
+         <div class="screen-number-slider-wrap">
+             <div class="screen-number-slider">
+                 <input type="range" id="slider" name="slider" min="1" max="10" value="1"  step="1" class="slajder" oninput="ScreenNumber.value=slider.value">
+                 <div class="number-slider-handle"> </div>
+                <div class="finish-arrow"></div></div>
+                <div class="screen-number-counters">
+                    <div class="number-item active">
+                        <div class="number-item-line"></div>
+                        <div>1</div></div>
+                        <div class="number-item">
+                            <div class="number-item-line"></div>
+                            <div>2</div></div>
+                            <div class="number-item">
+                                <div class="number-item-line"></div>
+                                <div>3</div></div>
+                                <div class="number-item">
+                                    <div class="number-item-line"></div>
+                                    <div>4</div></div>
+                                    <div class="number-item _5-discount">
+                                        <div class="number-item-line discount"></div>
+                                        <div class="text-number-5">5</div>
+                                        <div class="text-5-discount">5% discount</div></div>
+                                        <div class="number-item"><div class="number-item-line"></div>
+                                        <div>6</div></div>
+                                        <div class="number-item">
+                                            <div class="number-item-line"></div>
+                                            <div>7</div></div>
+                                            <div class="number-item">
+                                                <div class="number-item-line"></div>
+                                                <div>8</div></div>
+                                                <div class="number-item">
+                                                    <div class="number-item-line"></div>
+                                                    <div>9</div></div>
+                                                    <div class="number-item last">
+                                                        <div class="number-item-line last"></div>
+                                                        <div>10</div>
+                                                        <div class="text-10-or-more">or more</div></div></div></div></div>
+                                                    </form>         <style> /*! CSS Used from: https://assets-global.website-files.com/5d1b721ba694d65b53e25cf9/css/seenspire-website.e3f40e3c5.css */
+input{color:inherit;font:inherit;margin:0;}
+input::-moz-focus-inner{border:0;padding:0;}
+input{line-height:normal;}
+*{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;}
+.w-input{display:block;width:100%;height:38px;padding:8px 12px;margin-bottom:10px;font-size:14px;line-height:1.42857143;color:#333333;vertical-align:middle;background-color:#ffffff;border:1px solid #cccccc;}
+.w-input:-moz-placeholder{color:#999;}
+.w-input::-moz-placeholder{color:#999;opacity:1;}
+.w-input:-ms-input-placeholder{color:#999;}
+.w-input::-webkit-input-placeholder{color:#999;}
+.w-input:focus{border-color:#3898EC;outline:0;}
+.screen-number-wrap{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;margin-bottom:45px;padding:12px 34px 12px 24px;-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center;border-radius:5px;background-color:#f3f6f9;}
+.screen-number-input{width:75px;height:60px;margin-right:15px;margin-bottom:0px;padding:0px;border:1px solid #e5e9ee;border-radius:5px;color:#1984ec;font-size:28px;line-height:160%;text-align:center;}
+.screen-number-slider-wrap{width:100%;height:71px;-webkit-flex-wrap:wrap;-ms-flex-wrap:wrap;flex-wrap:wrap;-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center;-webkit-align-content:flex-start;-ms-flex-line-pack:start;align-content:flex-start;}
+.screen-number-slider{position:relative;width:100%;height:2px;margin-top:32px;background-color:#bbbfc7;background-clip:border-box;}
+.number-item{position:relative;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;min-width:16px;padding-top:15px;-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center;color:#bbbfc7;}
+.number-item.active{color:#6c7380;}
+.screen-number-counters{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;width:100%;padding-right:12%;-webkit-box-pack:justify;-webkit-justify-content:space-between;-ms-flex-pack:justify;justify-content:space-between;}
+.number-slider-handle{position:absolute;left:0%;top:-7px;z-index:10;width:16px;height:16px;border:2px solid #1984ec;border-radius:50%;background-color:#f3f6f9;cursor:pointer; display:none;}
+.number-item-line{position:absolute;top:0px;width:2px;height:3px;background-color:#bbbfc7;background-clip:border-box;}
+.number-item-line.last{left:7px;}
+.number-item-line.discount{top:-15px;height:18px;}
+.text-5-discount{position:absolute;top:-40px;width:80px;color:#bbbfc7;font-weight:700;}
+.text-10-or-more{position:absolute;left:18px;width:50px;}
+.finish-arrow{position:absolute;top:-7px;right:-2px;width:10px;height:16px;background-image:url("https://assets-global.website-files.com/5d1b721ba694d65b53e25cf9/5f3ba5b3c58fd37ec46f9b81_slider%20arrow.svg");background-position:0px 0px;background-size:10px;background-repeat:no-repeat;}
+@media screen and (max-width: 991px){
+.number-item{min-width:14px;font-size:12px;}
+.text-10-or-more{left:16px;}
+}
+@media screen and (max-width: 767px){
+.screen-number-wrap{margin-bottom:40px;padding-top:16px;padding-right:17px;padding-left:17px;-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;}
+.screen-number-input{width:100%;margin-right:0px;}
+.screen-number-slider-wrap{height:auto;}
+.number-item{display:none;}
+.number-item._5-discount{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;margin-right:auto;margin-left:auto;}
+.number-item.last{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;font-size:14px;}
+.screen-number-counters{padding-left:12%;}
+.number-item-line.last{display:none;}
+.number-item-line.discount{top:0px;height:6px;}
+.text-5-discount{position:static;top:0px;width:auto;font-size:14px;font-weight:400;}
+.finish-arrow{display:none;}
+.text-number-5{display:none;}
+}
+/*! CSS Used from: Embedded */
+.w-input{height:auto;}
+
+.slajder {
+  width:100%;
+  position: absolute;
+  top: -24px;
+  max-width: 87.5%;
+  background: transparent;
+  cursor: pointer;
+  height: 48px;
+}
+input[type=range] {
+  	-webkit-appearance: none;
+  border: none;
+}
+input[type=range]::-webkit-slider-thumb {
+	background: #ffffff;
+	border-radius: 50%;
+	border: 1px solid purple;
+  	cursor: pointer;
+  border: 2px solid #1984ec;
+  background-color: #f3f6f9;
+	height: 16px;
+	width: 16px;
+	-webkit-appearance: none;
+  cursor: pointer;
+  right: -1.2px;
+  position: relative;
+  z-index:1;
+}
+input[type=range]:active {
+	outline: none;
+}
+input[type=range]:focus {
+  outline: none;
+}
+</style>
